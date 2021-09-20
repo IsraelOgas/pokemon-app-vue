@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Quicksand";
+    src: url('/fonts/Quicksand-VariableFont_wght.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: "Pokemon Solid";
+    src: url('/fonts/Pokemon_Solid.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: "Pokemon Hollow";
+    src: url('/fonts/Pokemon_Hollow.woff2') format("woff2");
+  }
+  html,
+  body {
+    background-color: #f1f1f1;
+    margin: 0px;
+  }
+}
+
+@layer components {
+  .option {
+    @apply flex items-center justify-center relative overflow-hidden h-16 md:h-24 text-sm md:text-lg font-pokemon-solid tracking-widest w-60 rounded border capitalize shadow-lg hover:scale-105 transition duration-150 text-gray-500;
+  }
+}
